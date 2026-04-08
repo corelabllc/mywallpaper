@@ -1,0 +1,88 @@
+<svg width="625" height="300" viewBox="0 0 625 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d3b4f" stop-opacity="1" />
+      <stop offset="50%" stop-color="#1a5266" stop-opacity="1" />
+      <stop offset="100%" stop-color="#2a6f7d" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd93d" stop-opacity="1" />
+      <stop offset="100%" stop-color="#f6c23e" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="blueAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4facfe" stop-opacity="1" />
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="1" />
+    </linearGradient>
+    <filter id="softShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="0" dy="1" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="subtleGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="625" height="300" rx="24" fill="url(#bgGradient)"/>
+  
+  <circle cx="580" cy="60" r="100" fill="url(#blueAccent)" opacity="0.08"/>
+  <circle cx="70" cy="240" r="90" fill="url(#accentGradient)" opacity="0.08"/>
+  <circle cx="520" cy="230" r="80" fill="url(#blueAccent)" opacity="0.06"/>
+  
+  <g opacity="0.2">
+    <text x="40" y="50" font-size="32" transform="rotate(-15 40 50)">🎮</text>
+    <text x="570" y="80" font-size="30" transform="rotate(20 570 80)">🎯</text>
+    <text x="580" y="240" font-size="28" transform="rotate(-10 580 240)">🎲</text>
+    <text x="50" y="270" font-size="30" transform="rotate(15 50 270)">🕹️</text>
+  </g>
+  
+  <g opacity="0.25">
+    <text x="560" y="50" font-size="28" transform="rotate(10 560 50)">💰</text>
+    <text x="60" y="140" font-size="25" transform="rotate(-20 60 140)">💵</text>
+    <text x="540" y="180" font-size="30" transform="rotate(15 540 180)">💳</text>
+    <text x="45" y="250" font-size="28" transform="rotate(-12 45 250)">💎</text>
+  </g>
+  
+  <g opacity="0.12">
+    <circle cx="110" cy="60" r="3" fill="#ffd93d"/>
+    <circle cx="495" cy="90" r="3" fill="#4facfe"/>
+    <circle cx="100" cy="195" r="3" fill="#ffd93d"/>
+    <circle cx="515" cy="255" r="3" fill="#4facfe"/>
+  </g>
+  
+  <g transform="translate(312.5, 50)">
+    <text x="0" y="0" font-size="28" font-weight="700" fill="white" text-anchor="middle" filter="url(#softShadow)" letter-spacing="1.2" dominant-baseline="hanging">ゲームプレイやアンケート回答で</text>
+    <text x="0" y="42" font-size="36" font-weight="900" fill="url(#accentGradient)" text-anchor="middle" filter="url(#subtleGlow)" letter-spacing="1.8" dominant-baseline="hanging">無料で大量ポイントを獲得!</text>
+  </g>
+  
+  <g transform="translate(35, 185)">
+    <circle cx="30" cy="24" r="24" fill="url(#accentGradient)" opacity="0.18"/>
+    <text x="30" y="24" font-size="24" text-anchor="middle" filter="url(#subtleGlow)" dominant-baseline="middle">🎁</text>
+    <text x="62" y="8" font-size="16" font-weight="600" fill="white" filter="url(#softShadow)" dominant-baseline="hanging">無料登録で</text>
+    <text x="62" y="29" font-size="16" font-weight="600" fill="url(#accentGradient)" filter="url(#softShadow)" dominant-baseline="hanging">ポイントGET!</text>
+  </g>
+  
+  <g transform="translate(225, 185)">
+    <circle cx="30" cy="24" r="24" fill="url(#blueAccent)" opacity="0.18"/>
+    <text x="30" y="24" font-size="24" text-anchor="middle" filter="url(#subtleGlow)" dominant-baseline="middle">💳</text>
+    <text x="62" y="8" font-size="16" font-weight="600" fill="white" filter="url(#softShadow)" dominant-baseline="hanging">カード開設で</text>
+    <text x="62" y="29" font-size="16" font-weight="600" fill="url(#blueAccent)" filter="url(#softShadow)" dominant-baseline="hanging">大ボーナス!</text>
+  </g>
+  
+  <g transform="translate(415, 185)">
+    <circle cx="30" cy="24" r="24" fill="url(#accentGradient)" opacity="0.18"/>
+    <text x="30" y="24" font-size="24" text-anchor="middle" filter="url(#subtleGlow)" dominant-baseline="middle">💴</text>
+    <text x="62" y="8" font-size="16" font-weight="600" fill="white" filter="url(#softShadow)" dominant-baseline="hanging">1P=1円で還元、</text>
+    <text x="62" y="29" font-size="16" font-weight="600" fill="white" filter="url(#softShadow)" dominant-baseline="hanging">換金手数料無料</text>
+  </g>
+</svg>
